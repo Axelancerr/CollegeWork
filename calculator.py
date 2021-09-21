@@ -14,5 +14,3 @@ print(maths(10, 5, operation="*"))
 print(maths(20, 5, operation="/"))
 print(maths(1, 5, operation="-"))
 print(maths(20, 7, operation="-"))
-
-    
