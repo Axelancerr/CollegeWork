@@ -5,7 +5,7 @@ def find_divisors(number: int) -> list[int]:
     # Define a list to store the divisors/factors in.
     divisors = []
 
-    # Loop over all the numbers (potential devisors) leading up 
+    # Loop over all the numbers (potential divisors) leading up 
     # to the given number.
     # In Python, we explicitly tell the range to start at 1 and
     # end at the given number plus one, as normally it would
