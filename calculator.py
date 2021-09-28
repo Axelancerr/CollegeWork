@@ -10,7 +10,8 @@ def calculator(a: float, b: float, *, operation: str) -> float:
         return a + b
     raise ValueError("Invalid operation")
 
-print(calculator(10, 5, operation="*"))
-print(calculator(20, 5, operation="/"))
-print(calculator(1, 5, operation="-"))
-print(calculator(20, 7, operation="+"))
+a = float(input("Number 1: "))
+b = float(input("Number 2: "))
+operation = input("Operation: ")
+print(calculator(a, b, operation=operation))
+
