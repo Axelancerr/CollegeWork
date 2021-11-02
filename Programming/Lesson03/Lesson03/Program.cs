@@ -13,13 +13,13 @@ namespace Lesson03
             {"Unknown creatures severed horn", 2},
         };
 
-        private string BuyItem(string item, int required) 
+        private string BuyItem(string item)
         {
-            if (required > _gold)
+            if (_items[item] > _gold)
             {
                 return "You don't have enough gold pieces to buy that item.\n";
             }
-            _gold -= required;
+            _gold -= _items[item];
             return $"You bought '{item}', you now have {_gold} gold pieces remaining.\n";
         }
 
@@ -41,16 +41,16 @@ namespace Lesson03
                     switch (choice)
                     {
                         case 1:
-                            Console.WriteLine(BuyItem("Golden shovel", _items["Golden shovel"]));
+                            Console.WriteLine(BuyItem("Golden shovel"));
                             break; 
                         case 2:
-                            Console.WriteLine(BuyItem("Forbidden stick", _items["Forbidden stick"]));
+                            Console.WriteLine(BuyItem("Forbidden stick"));
                             break;
                         case 3:
-                            Console.WriteLine(BuyItem("Unknown creatures severed horn", _items["Unknown creatures severed horn"]));
+                            Console.WriteLine(BuyItem("Unknown creatures severed horn"));
                             break;
                         default:
-                            Console.WriteLine("That was not a valid choice.");
+                            Console.WriteLine("That was not a valid choice.\n");
                             break;
                     }
                 }
