@@ -2,7 +2,7 @@
 
 namespace Lesson04
 {
-    class Program
+    public class Program
     {
         private int _fishAmount = 0;
         private int _userInput;
